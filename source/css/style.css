@@ -1,27 +1,31 @@
 @charset "UTF-8";
-/* open-sans-300 - latin_cyrillic */
+/* montserrat-regular - latin_cyrillic */
 @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v17-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/open-sans-v17-latin_cyrillic-300.woff") format("woff"); }
-
-/* open-sans-regular - latin_cyrillic */
-@font-face {
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans-v17-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/open-sans-v17-latin_cyrillic-regular.woff") format("woff"); }
+  src: local(""), url("../fonts/Montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff"); }
 
-/* open-sans-700 - latin_cyrillic */
+/* montserrat-regular - latin_cyrillic */
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/Montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff"); }
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/Montserrat-semi-bold.woff2") format("woff2"), url("../fonts/montserrat-semi-bold.woff") format("woff"); }
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v17-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/open-sans-v17-latin_cyrillic-700.woff") format("woff"); }
+  src: local(""), url("../fonts/Montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff"); }
 
 .visually-hidden {
   position: absolute;
@@ -372,7 +376,7 @@ html {
   display: grid;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial";
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;

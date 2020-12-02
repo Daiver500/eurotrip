@@ -5,8 +5,8 @@
         <title>HTML Academy: PINK</title>
         <meta name="description" content="Взгляните на жизнь иначе" />
         <link rel="preload" href="css/style.css" as="style" />
-        <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-regular.woff" as="font" />
-        <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-regular.woff2" as="font" />
+        <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font" />
+        <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff" as="font" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body class="page">
@@ -44,7 +44,16 @@
             </nav>
         </header>
         <main class="page-content">
-            <h1 class="visually-hidden">Сайт поднятия настроения PINK</h1>
+            <picture>
+                <!--<source type="image/webp" media="(min-width:960px)" srcset="img/panorama-desktop@1x.webp, img/panorama-desktop@2x.webp 2x" />
+                <source type="image/webp" media="(min-width:660px)" srcset="img/panorama-tablet@1x.webp, img/panorama-tablet@2x.webp 2x" />
+                <source type="image/webp" srcset="img/panorama-mobile@1x.webp, img/panorama-mobile@2x.webp 2x" />
+                <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@1x.jpg 2x" />
+                <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@1x.jpg 2x" />-->
+                <img class="catalog__image-panorama" src="img/background-image@1x.jpg" srcset="img/background-image@1x.jpg 2x" alt="Панорамное фото" />
+            </picture>
+            <div class="catalog__label">
+              <h1 class="visually-hidden">Сайт поднятия настроения PINK</h1>
             <section class="download">
                 <div class="download__inner container">
                     <div class="download__slogan">
