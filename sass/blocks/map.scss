@@ -1,0 +1,92 @@
+.map {
+  position: relative;
+  background-color: $white;
+}
+
+.map__inner {
+  display: flex;
+  max-height: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .map__inner {
+    max-height: 374px;
+    max-width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__inner {
+    max-height: 502px;
+    max-width: 960px;
+  }
+}
+
+.map__image {
+  margin: 0 auto;
+}
+
+.map__image::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  top: 0;
+  min-width: 320px;
+  min-height: 40px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .map__image::before {
+    min-width: 660px;
+    min-height: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__image::before {
+    min-width: 960px;
+    min-height: 100px;
+  }
+}
+
+.map__marker {
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  /*background-image: url("../img/map-marker.svg");
+  width: 36px;
+  height: 36px;
+  padding: 0;*/
+}
+
+
+.map__inner iframe {
+  width: 100%;
+  min-height: 200px;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .map__inner iframe {
+    min-height: 374px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__inner iframe {
+    min-height: 502px;
+  }
+}
