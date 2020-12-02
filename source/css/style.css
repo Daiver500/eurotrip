@@ -443,6 +443,14 @@ html {
 .navigation__link:focus {
   color: #FE7865; }
 
+.catalog__inner {
+  background-image: url(../img/background-catalog@1x.png);
+  background-size: 1444px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 1000px; }
+
 .catalog__image {
   position: relative;
   max-width: 1920px;
