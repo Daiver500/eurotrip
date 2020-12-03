@@ -20,6 +20,7 @@
   width: 1024px;
   padding-top: 36px;
   padding-bottom: 31px;
+  position: relative;
 }
 
 .navigation__destinations {
@@ -28,6 +29,13 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  position: absolute;
+  left: 66.5%;
+  transform: translateX(-50%);
+}
+
+.navigation__item{
+  cursor: pointer;
 }
 
 .navigation__item:not(:last-child) {
@@ -54,6 +62,7 @@
 .navigation__link {
   font-size: 14px;
   line-height: 17px;
+  color: $dark;
 }
 
 .navigation__link-tel {
@@ -65,5 +74,5 @@
 
 .navigation__link:hover,
 .navigation__link:focus {
-  color: $orange-for-navi;
+  color: $orange-for-links;
 }

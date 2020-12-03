@@ -402,14 +402,21 @@ html {
   justify-content: space-between;
   width: 1024px;
   padding-top: 36px;
-  padding-bottom: 31px; }
+  padding-bottom: 31px;
+  position: relative; }
 
 .navigation__destinations {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin: 0; }
+  margin: 0;
+  position: absolute;
+  left: 66.5%;
+  transform: translateX(-50%); }
+
+.navigation__item {
+  cursor: pointer; }
 
 .navigation__item:not(:last-child) {
   padding-right: 40px; }
@@ -431,7 +438,8 @@ html {
 
 .navigation__link {
   font-size: 14px;
-  line-height: 17px; }
+  line-height: 17px;
+  color: #2C2E3F; }
 
 .navigation__link-tel {
   font-size: 18px;
@@ -445,7 +453,7 @@ html {
 
 .catalog__inner {
   background-image: url(../img/background-catalog@1x.png);
-  background-size: 1444px;
+  background-size: 1024px;
   background-position: 0 0;
   background-repeat: no-repeat;
   min-width: 1024px;
@@ -464,15 +472,61 @@ html {
   margin: 0 auto; }
 
 .footer__inner {
-  padding: 10px 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 80px; }
 
 .footer__destinations-inner {
   display: flex; }
 
+.footer__contacts {
+  display: flex;
+  flex-direction: column; }
+
 .destinations__list {
   list-style: none;
   padding: 0; }
+
+.destinations__list:not(:last-child) {
+  padding-right: 30px; }
+
+.destinations__title,
+.contacts__title,
+.description__title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600; }
+
+.destinations__link {
+  color: #2C2E3F; }
+
+.contacts__link {
+  position: relative; }
+
+.contacts__link-tel,
+.contacts__link-mail {
+  padding-left: 35px;
+  text-decoration: underline;
+  color: #FE7865; }
+
+.contacts__link-tel::before,
+.contacts__link-mail::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0px;
+  background-repeat: no-repeat; }
+
+.contacts__link-tel::before {
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/phone-icon-footer.svg); }
+
+.contacts__link-mail::before {
+  width: 26px;
+  height: 20px;
+  background-image: url(../img/mail-icon-footer.svg); }
 
 /*# sourceMappingURL=style.css.map */

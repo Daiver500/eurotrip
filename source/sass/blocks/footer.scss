@@ -1,14 +1,69 @@
 .footer__inner {
-  padding: 10px 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
+  grid-column-gap: 80px;
+};
 
 .footer__destinations-inner {
   display: flex;
+};
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
 }
 
 .destinations__list {
   list-style: none;
   padding: 0;
+};
+
+.destinations__list:not(:last-child) {
+  padding-right: 30px;
+}
+
+.destinations__title,
+.contacts__title,
+.description__title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+};
+
+.destinations__link {
+  color: $dark;
+}
+
+.contacts__link {
+  position: relative;
+}
+
+.contacts__link-tel,
+.contacts__link-mail {
+  padding-left: 35px;
+  text-decoration: underline;
+  color: $orange-for-links;
+}
+
+.contacts__link-tel::before,
+.contacts__link-mail::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0px;
+  background-repeat: no-repeat;
+}
+
+.contacts__link-tel::before {
+    width: 28px;
+  height: 28px;
+  background-image: url(../img/phone-icon-footer.svg);
+}
+
+.contacts__link-mail::before  {
+  width: 26px;
+  height: 20px;
+  background-image: url(../img/mail-icon-footer.svg);
 }
