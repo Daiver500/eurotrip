@@ -448,8 +448,8 @@ html {
   background-size: 1444px;
   background-position: 0 0;
   background-repeat: no-repeat;
-  width: 1920px;
-  height: 1000px; }
+  min-width: 1024px;
+  min-height: 800px; }
 
 .catalog__image {
   position: relative;
