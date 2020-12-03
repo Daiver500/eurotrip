@@ -56,11 +56,11 @@ img {
   width: 1024px;
   margin: 0 auto; }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .container {
     width: 768px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .container {
     width: 320px; } }
 
@@ -400,7 +400,7 @@ html {
   padding-right: 10px;
   display: flex;
   justify-content: space-between;
-  width: 960px;
+  width: 1024px;
   padding-top: 36px;
   padding-bottom: 31px; }
 
@@ -412,7 +412,7 @@ html {
   margin: 0; }
 
 .navigation__item:not(:last-child) {
-  padding-right: 44px; }
+  padding-right: 40px; }
 
 .navigation__logo {
   width: 55px;
