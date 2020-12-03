@@ -32,8 +32,9 @@
   font-weight: 600;
 };
 
-.destinations__link {
-  color: $dark;
+.destinations__link,
+.description__text {
+  color: $semi-dark;
 }
 
 .contacts__link {
@@ -57,7 +58,7 @@
 }
 
 .contacts__link-tel::before {
-    width: 28px;
+  width: 28px;
   height: 28px;
   background-image: url(../img/phone-icon-footer.svg);
 }

@@ -1,0 +1,139 @@
+.catalog__offers {
+  position: relative;
+}
+
+.offers__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 110px;
+}
+
+.offers__list::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  border: 1px solid $semi-dark;
+}
+
+.offers__link {
+  color: $semi-dark;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.offers__link:hover,
+.offers__link:focus {
+  color: $orange-for-links;
+}
+
+.offers__link:active {
+  color: $orange-for-links;
+}
+
+.offers__link--active {
+  color: $orange-for-links;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.offers__description {
+  min-width: 370px;
+}
+
+.offers__title {
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  position:relative;
+  margin-top: 0;
+  margin-bottom: 53px;
+}
+
+.offers__title::after,
+.reviews__title::after {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  right: 10px;
+}
+
+.offers__title::after {
+  max-width: 160px;
+  border: 4px solid #FE7865;
+}
+
+.offers__text {
+  max-width: 370px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.offers__button {
+  background-color: $orange-for-links;
+  padding: 30px 40px;
+  text-transform: uppercase;
+  border: none;
+  color: $white;
+}
+
+.offers__reviews {
+  background-color: $white;
+  max-width: 382px;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: 1;
+}
+
+.reviews__title {
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 50;
+  letter-spacing: -0.7px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.reviews__title::after {
+  max-width: 80px;
+  border: 1px solid #FE7865;
+  }
+
+.reviews__text {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.reviews__author {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.author__name {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.reviews__image {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: 0;
+}
+
