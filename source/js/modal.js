@@ -35,8 +35,9 @@ const modalEscPressHandler = (evt) => {
   }
 };
 
-const windowClickHandler = (evt) => {
+/*const windowClickHandler = (evt) => {
   if (evt.target !== modalInner) {
     closeModal()
   }
-};
+};*/
+
