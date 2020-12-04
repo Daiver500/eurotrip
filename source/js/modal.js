@@ -1,48 +1,43 @@
-var openModalDecline = document.querySelector(".form__button");
-var modalDecline = document.querySelector(".modal-decline");
-var formdestinations = document.querySelector(".form__destinations");
-var modalAccept = document.querySelector(".modal-accept");
-var userName = formdestinations.querySelector("input[name=surname]");
-var userSurName = formdestinations.querySelector("input[name=name]");
-var userEmail = formdestinations.querySelector("input[type=email]");
-var closeButtonDecline = document.querySelector(".modal-decline__button");
-var closeButtonAccept = document.querySelector(".modal-accept__button");
+const pricesButtons = document.querySelectorAll(".prices__button");
+const offersButton = document.querySelector(".offers__button");
+const modalWindow = document.querySelector(".modal");
+const closeModalButton = document.querySelector(".modal__close");
+const modalInner = document.querySelector(".modal__inner");
 
-formdestinations.addEventdestinationsener("submit", function (evt) {
-  if (!userName.value || !userEmail.value || !userSurName.value) {
-      evt.preventDefault();
-      userEmail.style.borderColor = "red";
-      userName.style.borderColor = "red";
-      userSurName.style.borderColor = "red";
-      modalDecline.classdestinations.add("modal-decline--show"); }
-      else {
-        modalAccept.classdestinations.add("modal-accept--show"); }
-  });
+const openModal = () => {
+  modalWindow.classList.remove("hidden");
+  closeModalButton.addEventListener("click", closeButtonClickHandler)
+  document.addEventListener("keydown", modalEscPressHandler);
+  //document.addEventListener("click", modalWindowClickHandler);
+}
 
-  closeButtonDecline.addEventdestinationsener("click", function (evt) {
+const closeModal = () => {
+  modalWindow.classList.add("hidden");
+  document.removeEventListener("keydown", modalEscPressHandler);
+  closeModalButton.removeEventListener("click", closeButtonClickHandler)
+ // document.removeEventListener("click", modalWindowClickHandler);
+}
+
+pricesButtons.forEach((item) => {
+  item.addEventListener("click", openModal)
+});
+
+offersButton.addEventListener("click", openModal);
+
+const closeButtonClickHandler = () => {
+  closeModal();
+}
+
+const modalEscPressHandler = (evt) => {
+  if (evt.key === `Escape`) {
+    closeModal();
     evt.preventDefault();
-    modalDecline.classdestinations.remove("modal-decline--show");
-  });
+  }
+};
 
-  window.addEventdestinationsener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-        if (modalDecline.classdestinations.contains("modal-decline--show")) {
-            evt.preventDefault();
-            modalDecline.classdestinations.remove("modal-decline--show");
-      }
-    }
-  });
-
-  closeButtonAccept.addEventdestinationsener("click", function (evt) {
-    evt.preventDefault();
-    modalAccept.classdestinations.remove("modal-accept--show");
-  });
-
-  window.addEventdestinationsener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-        if (modalDecline.classdestinations.contains("modal-accept--show")) {
-            evt.preventDefault();
-            modalDecline.classdestinations.remove("modal-accept--show");
-      }
-    }
-  });
+const modalWindowClickHandler = (evt) => {
+  if (evt.target !== modalInner) {
+    console.log(evt.target)
+    closeModal();
+  }
+};

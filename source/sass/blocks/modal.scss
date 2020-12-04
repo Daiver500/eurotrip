@@ -2,40 +2,80 @@
   display: flex;
 }
 
+.modal {
+  width: 728px;
+  min-height: 444px;
+  position: fixed;
+  top: calc(50% - 295px);
+  right: 0;
+  left: 0;
+  bottom: auto;
+  margin: auto;
+  text-align: center;
+  color: var(--black);
+  background-color: $white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.modal__picture {
+  width: 100%;
+}
+
+.modal__image {
+  display: block;
+}
 
 .modal__form {
-    position: relative;
-  }
-    
+  position: relative;
+}
+
 .modal__form::after {
   content: "";
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 65px;
+  top: 170px;
   background-repeat: no-repeat;
   width: 6px;
   height: 7px;
-  background-image: url(../img/star.png);
+  background-image: url("../img/star.png");
+}
+
+.modal__data {
+  padding: 70px 55px 70px;
 }
 
 .modal__header {
-  margin-bottom: 15px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 600;
+  margin-top: 0;
 }
- 
+
 .modal__phone,
 .modal__email {
   padding: 15px;
   min-width: 270px;
-}
-  
-.modal__phone {
-  margin-right: 10px;
-  margin-bottom: 25px;
-}
-  
-.modal__button {
-  padding: 18px 40px;
-  margin-left: 200px;
+  margin-bottom: 20px;
 }
 
+.modal__button {
+  padding: 18px 40px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 28px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
 
