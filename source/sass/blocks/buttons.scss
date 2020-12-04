@@ -1,0 +1,15 @@
+.button:hover,
+.button:focus {
+  background-color: $dark-orange;
+}
+
+.button {
+  text-transform: uppercase;
+  color: $white;
+  background-color: $orange-for-links;
+  cursor: pointer;
+  border: none;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}

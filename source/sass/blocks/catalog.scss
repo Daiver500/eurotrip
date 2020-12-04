@@ -1,8 +1,9 @@
 .catalog {
   background-image: url(../img/background-catalog@1x.png);
   background-size: 1440px;
-  background-position: 50% 120%;
+  background-position: 50% 85%;
   background-repeat: no-repeat;
+  margin-bottom: 140px;
 }
 
 .catalog__image {
@@ -59,6 +60,7 @@
   padding-right: 179px;
   background-color: $orange-for-links;
   border: none;
+  cursor: pointer;
 }
 
 .catalog__image-button:hover,

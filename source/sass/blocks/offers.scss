@@ -40,10 +40,11 @@
   color: $orange-for-links;
 }
 
-.wrapper {
+.offers__wrapper {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 240px;
 }
 
 .offers__description {
@@ -83,11 +84,7 @@
 }
 
 .offers__button {
-  background-color: $orange-for-links;
   padding: 30px 40px;
-  text-transform: uppercase;
-  border: none;
-  color: $white;
 }
 
 .offers__reviews {
@@ -128,6 +125,11 @@
 .author__name {
   margin: 0;
   padding-left: 16px;
+}
+
+.author__avatar {
+  width: 38px;
+  height: 38px;
 }
 
 .reviews__image {
