@@ -8,14 +8,14 @@ const openModal = () => {
   modalWindow.classList.remove("hidden");
   closeModalButton.addEventListener("click", closeButtonClickHandler)
   document.addEventListener("keydown", modalEscPressHandler);
-  //document.addEventListener("click", modalWindowClickHandler);
+  document.addEventListener("click", modalWindowClickHandler);
 }
 
 const closeModal = () => {
   modalWindow.classList.add("hidden");
-  document.removeEventListener("keydown", modalEscPressHandler);
   closeModalButton.removeEventListener("click", closeButtonClickHandler)
- // document.removeEventListener("click", modalWindowClickHandler);
+  document.removeEventListener("keydown", modalEscPressHandler);
+  document.removeEventListener("click", modalWindowClickHandler);
 }
 
 pricesButtons.forEach((item) => {
