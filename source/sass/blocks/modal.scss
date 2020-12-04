@@ -1,8 +1,5 @@
 .modal__inner {
   display: flex;
-}
-
-.modal {
   width: 728px;
   min-height: 444px;
   position: fixed;
@@ -16,6 +13,19 @@
   background-color: $white;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   z-index: 2;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal__picture {
@@ -75,7 +85,7 @@
   cursor: pointer;
 }
 
-.hidden {
+.modal__hidden {
   display: none;
 }
 

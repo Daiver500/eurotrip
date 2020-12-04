@@ -1,21 +1,21 @@
 const pricesButtons = document.querySelectorAll(".prices__button");
 const offersButton = document.querySelector(".offers__button");
-const modalWindow = document.querySelector(".modal");
+const modalMain = document.querySelector(".modal");
 const closeModalButton = document.querySelector(".modal__close");
 const modalInner = document.querySelector(".modal__inner");
 
 const openModal = () => {
-  modalWindow.classList.remove("hidden");
+  modalMain.classList.remove("modal__hidden");
   closeModalButton.addEventListener("click", closeButtonClickHandler)
   document.addEventListener("keydown", modalEscPressHandler);
-  document.addEventListener("click", modalWindowClickHandler);
+  //document.addEventListener("click", windowClickHandler);
 }
 
 const closeModal = () => {
-  modalWindow.classList.add("hidden");
+  modalMain.classList.add("modal__hidden");
   closeModalButton.removeEventListener("click", closeButtonClickHandler)
   document.removeEventListener("keydown", modalEscPressHandler);
-  document.removeEventListener("click", modalWindowClickHandler);
+  //document.removeEventListener("click", windowClickHandler);
 }
 
 pricesButtons.forEach((item) => {
@@ -35,9 +35,8 @@ const modalEscPressHandler = (evt) => {
   }
 };
 
-const modalWindowClickHandler = (evt) => {
+const windowClickHandler = (evt) => {
   if (evt.target !== modalInner) {
-    console.log(evt.target)
-    closeModal();
+    closeModal()
   }
 };
