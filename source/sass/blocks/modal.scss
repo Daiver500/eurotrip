@@ -1,0 +1,41 @@
+.modal__inner {
+  display: flex;
+}
+
+
+.modal__form {
+    position: relative;
+  }
+    
+.modal__form::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 7px;
+  background-image: url(../img/star.png);
+}
+
+.modal__header {
+  margin-bottom: 15px;
+}
+ 
+.modal__phone,
+.modal__email {
+  padding: 15px;
+  min-width: 270px;
+}
+  
+.modal__phone {
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+  
+.modal__button {
+  padding: 18px 40px;
+  margin-left: 200px;
+}
+
+

@@ -514,18 +514,10 @@ html {
   padding-bottom: 39px; }
 
 .catalog__image-button {
-  text-transform: uppercase;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 40px;
-  padding-right: 179px;
-  background-color: #FE7865;
-  border: none;
-  cursor: pointer; }
-
-.catalog__image-button:hover,
-.catalog__image-button:focus {
-  background-color: #F17D4B; }
+  padding-right: 179px; }
 
 .catalog__image-buttontext {
   font-size: 12px;
@@ -837,8 +829,6 @@ html {
 
 .prices__button {
   padding: 30px 70px;
-  font-size: 12px;
-  line-height: 15px;
   margin-left: 10px; }
 
 .prices__button:hover,
@@ -1012,5 +1002,37 @@ html {
   width: 26px;
   height: 20px;
   background-image: url(../img/mail-icon-footer.svg); }
+
+.modal__inner {
+  display: flex; }
+
+.modal__form {
+  position: relative; }
+
+.modal__form::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 7px;
+  background-image: url(../img/star.png); }
+
+.modal__header {
+  margin-bottom: 15px; }
+
+.modal__phone,
+.modal__email {
+  padding: 15px;
+  min-width: 270px; }
+
+.modal__phone {
+  margin-right: 10px;
+  margin-bottom: 25px; }
+
+.modal__button {
+  padding: 18px 40px;
+  margin-left: 200px; }
 
 /*# sourceMappingURL=style.css.map */

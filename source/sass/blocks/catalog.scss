@@ -53,19 +53,10 @@
 }
 
 .catalog__image-button {
-  text-transform: uppercase;
   padding-top: 30px;
   padding-bottom: 30px; 
   padding-left: 40px;
   padding-right: 179px;
-  background-color: $orange-for-links;
-  border: none;
-  cursor: pointer;
-}
-
-.catalog__image-button:hover,
-.catalog__image-button:focus {
-  background-color: $orange;
 }
 
 .catalog__image-buttontext {
