@@ -9,6 +9,9 @@ const closeModalSuccessButton = document.querySelector(".modalsuccess__close");
 const modalSuccessInner = document.querySelector(".modalsuccess__inner");
 const modalPhone = document.querySelector(".modal__phone");
 const modalEmail = document.querySelector(".modal__email");
+const contactsForm = document.querySelector(".contacts__form");
+const contactsPhone = document.querySelector(".contacts__phone");
+const contactsEmail = document.querySelector(".contacts__email");
 
 const modalEscPressHandler = (evt) => {
   if (evt.key === `Escape`) {
@@ -73,4 +76,13 @@ const formSendingHandler = (evt) => {
   openSuccessModal();
   evt.preventDefault();
 }
+
+contactsForm.addEventListener("submit", function (evt) {
+  modalSuccess.classList.remove("modal__hidden");
+  evt.preventDefault();
+  closeModalSuccessButton.addEventListener("click", closeModalSuccessButtonClickHandler)
+  document.addEventListener("keydown", modalSuccessEscPressHandler);
+  contactsPhone.value = "";
+  contactsEmail.value = "";
+})
 

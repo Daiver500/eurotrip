@@ -86,7 +86,7 @@ const filterClickHandler = ((evt) => {
     checkGreeceModule();
       break;
     case `albania`:
-    checkMakedoniaModule();
+    checkAlbaniaModule();
       break;
     case `makedonia`:
     checkMakedoniaModule();
