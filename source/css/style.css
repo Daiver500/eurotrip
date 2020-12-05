@@ -470,7 +470,7 @@ html {
 .catalog {
   background-image: url("../img/background-catalog@1x.png");
   background-size: 1440px;
-  background-position: 50% 85%;
+  background-position: 50% 2550px;
   background-repeat: no-repeat;
   margin-bottom: 140px; }
 
@@ -575,7 +575,7 @@ html {
 
 .catalog__nameplate {
   position: absolute;
-  bottom: 7px;
+  bottom: 6px;
   left: 37px;
   padding: 10px 20px;
   min-width: 215px;
@@ -603,7 +603,8 @@ html {
   padding: 30px 25px;
   clip: rect(0 0 0 0);
   overflow: hidden;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .catalog__item:hover,
 .catalog__item:focus {
@@ -635,19 +636,19 @@ html {
   right: 0;
   border: 1px solid rgba(44, 46, 63, 0.3); }
 
-.offers__link {
+.offers__button {
   color: rgba(44, 46, 63, 0.3);
   font-size: 20px;
-  line-height: 24px; }
+  line-height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: inherit; }
 
-.offers__link:hover,
-.offers__link:focus {
+.offers__button:hover,
+.offers__button:focus {
   color: #FE7865; }
 
-.offers__link:active {
-  color: #FE7865; }
-
-.offers__link--active {
+.offers__button--active {
   color: #FE7865; }
 
 .offers__wrapper {
@@ -687,7 +688,7 @@ html {
   margin-top: 0;
   margin-bottom: 50px; }
 
-.offers__button {
+.offers__button-order {
   padding: 30px 40px; }
 
 .offers__reviews {
@@ -731,8 +732,14 @@ html {
 .reviews__image {
   position: absolute;
   right: 120px;
-  top: 100px;
+  top: -55px;
   z-index: 0; }
+
+.offers__wrapper {
+  display: none; }
+
+.offers__wrapper--active {
+  display: block; }
 
 .prices__wrapper {
   display: flex;

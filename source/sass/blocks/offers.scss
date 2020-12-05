@@ -21,22 +21,21 @@
   border: 1px solid $semi-dark;
 }
 
-.offers__link {
+.offers__button {
   color: $semi-dark;
   font-size: 20px;
   line-height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
 }
 
-.offers__link:hover,
-.offers__link:focus {
+.offers__button:hover,
+.offers__button:focus {
   color: $orange-for-links;
 }
 
-.offers__link:active {
-  color: $orange-for-links;
-}
-
-.offers__link--active {
+.offers__button--active {
   color: $orange-for-links;
 }
 
@@ -83,7 +82,7 @@
   margin-bottom: 50px;
 }
 
-.offers__button {
+.offers__button-order {
   padding: 30px 40px;
 }
 
@@ -135,7 +134,15 @@
 .reviews__image {
   position: absolute;
   right: 120px;
-  top: 100px;
+  top: -55px;
   z-index: 0;
+}
+
+.offers__wrapper {
+  display: none;
+}
+
+.offers__wrapper--active {
+  display: block;
 }
 

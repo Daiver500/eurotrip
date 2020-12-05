@@ -77,7 +77,7 @@
                         <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
                         <img src="img/grecia-desktop.jpg" alt="Фото карточки каталога" />
                       </picture>
-                    <button class="catalog__button" type="button">Смотреть подробнее</button>
+                    <button class="catalog__button catalog__button-greece" type="button">Смотреть подробнее</button>
                     <div class="catalog__nameplate">
                       <p class="nameplate__text">Греция</p>
                     </div>
@@ -93,7 +93,7 @@
                       <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
                       <img src="img/albania-desktop.jpg" alt="Фото карточки каталога" />
                   </picture>
-                  <button class="catalog__button" type="button">Смотреть подробнее</button>
+                  <button class="catalog__button catalog__button-albania" type="button">Смотреть подробнее</button>
                   <div class="catalog__nameplate">
                     <p class="nameplate__text">Албания</p>
                   </div>
@@ -109,7 +109,7 @@
                     <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
                     <img src="img/makedonia-desktop.jpg" alt="Фото карточки каталога" />
                 </picture>
-                <button class="catalog__button" type="button">Смотреть подробнее</button>
+                <button class="catalog__button catalog__button-makedonia" type="button">Смотреть подробнее</button>
                 <div class="catalog__nameplate">
                   <p class="nameplate__text">Македония</p>
                 </div>
@@ -125,7 +125,7 @@
                   <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
                   <img src="img/chernogoria-desktop.jpg" alt="Фото карточки каталога" />
               </picture>
-              <button class="catalog__button" type="button">Смотреть подробнее</button>
+              <button class="catalog__button catalog__button-montenegro" type="button">Смотреть подробнее</button>
               <div class="catalog__nameplate">
                 <p class="nameplate__text">Черногория</p>
               </div>
@@ -141,7 +141,7 @@
                 <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
                 <img src="img/horvatia-desktop.jpg" alt="Фото карточки каталога" />
             </picture>
-            <button class="catalog__button" type="button">Смотреть подробнее</button>
+            <button class="catalog__button catalog__button-croatia" type="button">Смотреть подробнее</button>
             <div class="catalog__nameplate">
               <p class="nameplate__text">Хорватия</p>
             </div>
@@ -150,27 +150,138 @@
          </ul>
          <div class="catalog__offers">
           <ul class="offers__list">
-            <li class="offers__item"><a class="offers__link offers__link--active" href="blank.html">Греция</a></li>
-            <li class="offers__item"><a class="offers__link" href="blank.html">Албания</a></li>
-            <li class="offers__item"><a class="offers__link" href="blank.html">Македония</a></li>
-            <li class="offers__item"><a class="offers__link" href="blank.html">Черногория</a></li>
-            <li class="offers__item"><a class="offers__link" href="blank.html">Хорватия</a></li>
+            <li class="offers__item"><button id="greece" type="button" class="offers__button offers__button--active">Греция</button></li>
+            <li class="offers__item"><button id="albania" type="button" class="offers__button" href="blank.html">Албания</button></li>
+            <li class="offers__item"><button id="makedonia" type="button" class="offers__button" href="blank.html">Македония</button></li>
+            <li class="offers__item"><button id="montenegro" type="button" class="offers__button" href="blank.html">Черногория</button></li>
+            <li class="offers__item"><button id="croatia" type="button" class="offers__button" href="blank.html">Хорватия</button></li>
           </ul>
-          <div class="offers__wrapper">
+          <div class="offers__wrapper offers__wrapper-greece offers__wrapper--active">
             <div class="offers__description">
               <p class="offers__title">Греция</p>
               <p class="offers__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
-              <button class="offers__button button" type="button">Купить тур сейчас</button>
+              <button class="offers__button-order button" type="button">Купить тур сейчас</button>
+            </div>
+            <div>
+              <picture>
+                <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
+                <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
+                <source type="image/webp" srcset="img/grecia-desktop.webp" />
+                <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
+                <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
+                <img class="reviews__image" src="img/background-reviews-greece.jpg" alt="Видовая картинка" />
+                </picture>
             </div>
             <div class="offers__reviews">
               <p class="reviews__title">Отзывы</p>
               <p class="reviews__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
               <div class="reviews__author">
-                <img class="author__avatar" src="img/avatar-icon.jpg" alt="Аватар автора отзыва" width="38" height="38" ></img>
+                <img class="author__avatar" src="img/avatar-icon-greece.jpg" alt="Аватар автора отзыва" width="38" height="38" ></img>
                 <p class="author__name">Влада Голицына</p>
               </div>
             </div>
           </div>
+          <div class="offers__wrapper offers__wrapper-albania">
+            <div class="offers__description">
+              <p class="offers__title">Албания</p>
+              <p class="offers__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.  </p>
+              <button class="offers__button-order button" type="button">Купить тур сейчас</button>
+            </div>
+            <div>
+              <picture>
+                <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
+                <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
+                <source type="image/webp" srcset="img/grecia-desktop.webp" />
+                <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
+                <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
+                <img class="reviews__image" src="img/background-reviews-albania.jpg" alt="Видовая картинка" />
+              </picture>
+            </div>
+            <div class="offers__reviews">
+              <p class="reviews__title">Отзывы</p>
+              <p class="reviews__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :) </p>
+              <div class="reviews__author">
+                <img class="author__avatar" src="img/avatar-icon-albania.jpg" alt="Аватар автора отзыва" width="38" height="38" ></img>
+                <p class="author__name">Маришка</p>
+              </div>
+            </div>
+          </div>
+            <div class="offers__wrapper offers__wrapper-makedonia">
+              <div class="offers__description">
+                <p class="offers__title">Македония</p>
+                <p class="offers__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров. </p>
+                <button class="offers__button-order button" type="button">Купить тур сейчас</button>
+              </div>
+              <div>
+                <picture>
+                  <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
+                  <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
+                  <source type="image/webp" srcset="img/grecia-desktop.webp" />
+                  <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
+                  <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
+                  <img class="reviews__image" src="img/background-reviews-makedonia.jpg" alt="Видовая картинка" />
+                </picture>
+              </div>
+            <div class="offers__reviews">
+              <p class="reviews__title">Отзывы</p>
+              <p class="reviews__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору. </p>
+              <div class="reviews__author">
+                <img class="author__avatar" src="img/avatar-icon-makedonia.jpg" alt="Аватар автора отзыва" width="38" height="38" ></img>
+                <p class="author__name">Михаил Кузьмин</p>
+              </div>
+            </div>
+          </div>
+          <div class="offers__wrapper offers__wrapper-montenegro">
+            <div class="offers__description">
+              <p class="offers__title">Черногория</p>
+              <p class="offers__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.   </p>
+              <button class="offers__button-order button" type="button">Купить тур сейчас</button>
+            </div>
+            <div>
+              <picture>
+                <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
+                <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
+                <source type="image/webp" srcset="img/grecia-desktop.webp" />
+                <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
+                <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
+                <img class="reviews__image" src="img/background-reviews-montenegro.jpg" alt="Видовая картинка" />
+              </picture>
+            </div>
+            <div class="offers__reviews">
+              <p class="reviews__title">Отзывы</p>
+              <p class="reviews__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую </p>
+              <div class="reviews__author">
+                <img class="author__avatar" src="img/avatar-icon-montenegro.jpg" alt="Аватар автора отзыва" width="38" height="38" ></img>
+                <p class="author__name">Анастасия мей</p>
+              </div>
+            </div>
+          </div>
+          <div class="offers__wrapper offers__wrapper-croatia">
+            <div class="offers__description">
+              <p class="offers__title">Хорватия</p>
+              <p class="offers__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет. </p>
+              <button class="offers__button-order button" type="button">Купить тур сейчас</button>
+            </div>
+            <div>
+              <picture>
+                <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
+                <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
+                <source type="image/webp" srcset="img/grecia-desktop.webp" />
+                <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
+                <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
+                <img class="reviews__image" src="img/background-reviews-croatia.jpg" alt="Видовая картинка" />
+              </picture>
+            </div>
+            <div class="offers__reviews">
+              <p class="reviews__title">Отзывы</p>
+              <p class="reviews__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :) </p>
+              <div class="reviews__author">
+                <img class="author__avatar" src="img/avatar-icon-croatia.jpg" alt="Аватар автора отзыва" width="38" height="38" ></img>
+                <p class="author__name">Владимир Мулицин</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="prices__wrapper">
           <div class="prices__description prices__description--active">
             <p class="prices__title prices__title--active">Комплексный <span class="prices__summ">$1999</span></p>
@@ -204,14 +315,6 @@
             </div>
           </div>
         </div>
-          <picture>
-            <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
-            <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
-            <source type="image/webp" srcset="img/grecia-desktop.webp" />
-            <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
-            <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
-            <img class="reviews__image" src="img/background-reviews.jpg" alt="Видовая картинка" />
-            </picture>
            </section>
            <section class="contacts">
             <div class="contacts__inner container">
@@ -291,5 +394,6 @@
         </footer>
 
       <script src="js/modal.js"></script>
+      <script src="js/main.js"></script>
       </body>
 </html>
