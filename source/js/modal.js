@@ -3,6 +3,12 @@ const offersButton = document.querySelectorAll(".offers__button-order");
 const modalMain = document.querySelector(".modal");
 const closeModalButton = document.querySelector(".modal__close");
 const modalInner = document.querySelector(".modal__inner");
+const modalForm = document.querySelector(".modal__form")
+const modalSuccess = document.querySelector(".modalsuccess");
+const closeModalSuccessButton = document.querySelector(".modalsuccess__close");
+const modalSuccessInner = document.querySelector(".modalsuccess__inner");
+const modalPhone = document.querySelector(".modal__phone");
+const modalEmail = document.querySelector(".modal__email");
 
 const modalEscPressHandler = (evt) => {
   if (evt.key === `Escape`) {
@@ -13,16 +19,16 @@ const modalEscPressHandler = (evt) => {
 
 const openModal = () => {
   modalMain.classList.remove("modal__hidden");
-  closeModalButton.addEventListener("click", closeButtonClickHandler)
+  closeModalButton.addEventListener("click", closeModalButtonClickHandler)
   document.addEventListener("keydown", modalEscPressHandler);
-  //document.addEventListener("click", windowClickHandler);
+  modalForm.addEventListener("submit", formSendingHandler);
 }
 
 const closeModal = () => {
   modalMain.classList.add("modal__hidden");
-  closeModalButton.removeEventListener("click", closeButtonClickHandler)
+  closeModalButton.removeEventListener("click", closeModalButtonClickHandler)
   document.removeEventListener("keydown", modalEscPressHandler);
-  //document.removeEventListener("click", windowClickHandler);
+  modalForm.removeEventListener("submit", formSendingHandler);
 }
 
 pricesButtons.forEach((item) => {
@@ -33,12 +39,38 @@ offersButton.forEach((item) => {
   item.addEventListener("click", openModal)
 });
 
-const closeButtonClickHandler = () => {
+const closeModalButtonClickHandler = () => {
   closeModal();
 }
 
-//const windowClickHandler = (evt) => {
-  //if (!modalMain.classList.contains("modal__hidden") || evt.target !== modalInner) {
-    //closeModal()
-  //}
-//};
+const modalSuccessEscPressHandler = (evt) => {
+  if (evt.key === `Escape`) {
+    closeSuccessModal();
+    evt.preventDefault();
+  }
+};
+
+const openSuccessModal = () => {
+  modalMain.classList.add("modal__hidden");
+  modalSuccess.classList.remove("modal__hidden");
+  closeModalSuccessButton.addEventListener("click", closeModalSuccessButtonClickHandler)
+  document.addEventListener("keydown", modalSuccessEscPressHandler);
+}
+
+const closeSuccessModal = () => {
+  modalSuccess.classList.add("modal__hidden");
+  closeModalSuccessButton.addEventListener("click", closeModalSuccessButtonClickHandler)
+  document.removeEventListener("keydown", modalSuccessEscPressHandler);
+}
+
+const closeModalSuccessButtonClickHandler = () => {
+  closeSuccessModal();
+}
+
+const formSendingHandler = (evt) => {
+  modalPhone.value = "";
+  modalEmail.value = "";
+  openSuccessModal();
+  evt.preventDefault();
+}
+

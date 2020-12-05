@@ -1013,7 +1013,8 @@ html {
   height: 20px;
   background-image: url(../img/mail-icon-footer.svg); }
 
-.modal__inner {
+.modal__inner,
+.modalsuccess__inner {
   display: flex;
   width: 728px;
   min-height: 444px;
@@ -1024,12 +1025,14 @@ html {
   bottom: auto;
   margin: auto;
   text-align: center;
-  color: var(--black);
-  background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   z-index: 2; }
 
-.modal {
+.modal__inner {
+  background-color: #ffffff; }
+
+.modal,
+.modalsuccess {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -1040,6 +1043,15 @@ html {
   bottom: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.8); }
+
+.modalsuccess__inner {
+  background-color: #FBF8F8;
+  padding: 180px 165px; }
+
+.modalsuccess__text {
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 500; }
 
 .modal__picture {
   width: 100%; }
@@ -1079,7 +1091,8 @@ html {
 .modal__button {
   padding: 18px 40px; }
 
-.modal__close {
+.modal__close,
+.modalsuccess__close {
   position: absolute;
   top: 20px;
   right: 20px;

@@ -3,6 +3,11 @@ const catalogTitle = document.querySelector(".catalog__title");
 const catalogButton = document.querySelectorAll(".catalog__button")
 const catalogOffers = document.querySelector(".catalog__offers")
 const offersList = document.querySelector(".offers__list")
+const greece = document.querySelector(".offers__wrapper-greece")
+const albania = document.querySelector(".offers__wrapper-albania")
+const makedonia = document.querySelector(".offers__wrapper-makedonia")
+const montenegro = document.querySelector(".offers__wrapper-montenegro")
+const croatia = document.querySelector(".offers__wrapper-croatia")
 
 catalogImageButton.addEventListener("click", function(){
   catalogTitle.scrollIntoView({behavior: "smooth"});
@@ -23,13 +28,7 @@ const setActiveFilterBtn = (evt) => {
   }
 };
 
-const greece = document.querySelector(".offers__wrapper-greece")
-const albania = document.querySelector(".offers__wrapper-albania")
-const makedonia = document.querySelector(".offers__wrapper-makedonia")
-const montenegro = document.querySelector(".offers__wrapper-montenegro")
-const croatia = document.querySelector(".offers__wrapper-croatia")
-
-const test = () => {
+const checkGreeceModule = () => {
   if(!greece.classList.contains("offers__wrapper--active")) {
     albania.classList.remove("offers__wrapper--active");
     makedonia.classList.remove("offers__wrapper--active");
@@ -39,7 +38,7 @@ const test = () => {
   }
 }
 
-const test2 = () => {
+const checkAlbaniaModule = () => {
   if(!albania.classList.contains("offers__wrapper--active")) {
     greece.classList.remove("offers__wrapper--active");
     makedonia.classList.remove("offers__wrapper--active");
@@ -49,7 +48,7 @@ const test2 = () => {
   }
 }
 
-const test3 = () => {
+const checkMakedoniaModule = () => {
   if(!makedonia.classList.contains("offers__wrapper--active")) {
     greece.classList.remove("offers__wrapper--active");
     albania.classList.remove("offers__wrapper--active");
@@ -59,7 +58,7 @@ const test3 = () => {
   }
 }
 
-const test4 = () => {
+const checkMontenegroModule = () => {
   if(!montenegro.classList.contains("offers__wrapper--active")) {
     greece.classList.remove("offers__wrapper--active");
     albania.classList.remove("offers__wrapper--active");
@@ -69,7 +68,7 @@ const test4 = () => {
   }
 }
 
-const test5 = () => {
+const checkCroatiaModule = () => {
   if(!croatia.classList.contains("offers__wrapper--active")) {
     greece.classList.remove("offers__wrapper--active");
     albania.classList.remove("offers__wrapper--active");
@@ -84,19 +83,19 @@ const filterClickHandler = ((evt) => {
 
   switch (evt.target.id) {
     case `greece`:
-      test();
+    checkGreeceModule();
       break;
     case `albania`:
-     test2();
+    checkMakedoniaModule();
       break;
     case `makedonia`:
-     test3();
+    checkMakedoniaModule();
       break;
     case `montenegro`:
-     test4();
+    checkMontenegroModule();
       break;
     case `croatia`:
-     test5();
+    checkCroatiaModule();
       break;
     default:
   }
