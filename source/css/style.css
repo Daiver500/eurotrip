@@ -53,6 +53,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+.hidden {
+  display: none; }
+
 .container {
   width: 1024px;
   margin: 0 auto;
@@ -406,7 +409,25 @@ html {
 .navigation__close,
 .navigation__open,
 .navigation__toggle {
-  display: none; }
+  border: none;
+  background-color: inherit; }
+
+.navigation__toggle-open {
+  background-color: #F17D4B;
+  width: 50px;
+  height: 50px; }
+
+.navigation__toggle-close {
+  color: #D7D9DF; }
+
+.navigation__open {
+  width: 30px;
+  height: 30px;
+  color: #ffffff; }
+
+.navigation__close {
+  width: 22px;
+  height: 22px; }
 
 .navigation__inner {
   padding-left: 10px;
@@ -466,7 +487,9 @@ html {
 
 @media (max-width: 1023px) {
   .navigation__inner {
-    display: block; }
+    display: block;
+    padding-left: 0;
+    padding-right: 0; }
   .navigation__destinations {
     position: relative;
     flex-direction: column;
@@ -493,7 +516,12 @@ html {
   .navigation__item:not(:last-child) {
     margin-bottom: 30px; }
   .navigation__link-tel {
-    display: none; } }
+    display: none; }
+  .navigation__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 .catalog {
   background-image: url("../img/background-catalog@1x.png");
