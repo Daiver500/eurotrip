@@ -23,6 +23,7 @@ const modalEscPressHandler = (evt) => {
 const openModal = () => {
   modalMain.classList.remove("modal__hidden");
   closeModalButton.addEventListener("click", closeModalButtonClickHandler)
+  modalMain.addEventListener("click", windowClickHandler);
   document.addEventListener("keydown", modalEscPressHandler);
   modalForm.addEventListener("submit", formSendingHandler);
 }
@@ -30,6 +31,7 @@ const openModal = () => {
 const closeModal = () => {
   modalMain.classList.add("modal__hidden");
   closeModalButton.removeEventListener("click", closeModalButtonClickHandler)
+  modalMain.removeEventListener("click", windowClickHandler);
   document.removeEventListener("keydown", modalEscPressHandler);
   modalForm.removeEventListener("submit", formSendingHandler);
 }
@@ -46,6 +48,13 @@ const closeModalButtonClickHandler = () => {
   closeModal();
 }
 
+const windowClickHandler = (evt) => {
+  if (evt.target === modalMain) {
+    console.log(evt.target)
+    closeModal();
+  }
+}
+
 const modalSuccessEscPressHandler = (evt) => {
   if (evt.key === `Escape`) {
     closeSuccessModal();
@@ -56,6 +65,7 @@ const modalSuccessEscPressHandler = (evt) => {
 const openSuccessModal = () => {
   modalMain.classList.add("modal__hidden");
   modalSuccess.classList.remove("modal__hidden");
+  modalSuccess.addEventListener("click", windowSuccessClickHandler);
   closeModalSuccessButton.addEventListener("click", closeModalSuccessButtonClickHandler)
   document.addEventListener("keydown", modalSuccessEscPressHandler);
 }
@@ -63,11 +73,19 @@ const openSuccessModal = () => {
 const closeSuccessModal = () => {
   modalSuccess.classList.add("modal__hidden");
   closeModalSuccessButton.addEventListener("click", closeModalSuccessButtonClickHandler)
+  modalSuccess.removeEventListener("click", windowSuccessClickHandler);
   document.removeEventListener("keydown", modalSuccessEscPressHandler);
 }
 
 const closeModalSuccessButtonClickHandler = () => {
   closeSuccessModal();
+}
+
+const windowSuccessClickHandler = (evt) => {
+  if (evt.target === modalSuccess) {
+    console.log(evt.target)
+    closeSuccessModal();
+  }
 }
 
 const formSendingHandler = (evt) => {
