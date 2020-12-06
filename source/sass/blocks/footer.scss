@@ -8,21 +8,37 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 80px;
-};
+}
 
 .footer__destinations-inner {
   display: flex;
-};
+}
 
 .footer__contacts {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.footer__contacts::after,
+.footer__destinations::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 290px;
+  border-right: 1px solid $light-grey;
+  right: -21px;
+  top: 25px;
+}
+
+.footer__destinations {
+  position: relative;
 }
 
 .destinations__list {
   list-style: none;
   padding: 0;
-};
+}
 
 .destinations__list:not(:last-child) {
   padding-right: 30px;
@@ -34,11 +50,22 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: 600;
-};
+}
+
+.destinations__title,
+.contacts__title,
+.description__title {
+  margin-top: 0;
+}
 
 .destinations__link,
 .description__text {
   color: $semi-dark;
+}
+
+.destinations__list,
+.description__text {
+  margin: 0;
 }
 
 .contacts__link {
@@ -52,23 +79,72 @@
   color: $orange-for-links;
 }
 
+.contacts__link-mail {
+  margin-bottom: 20px;
+}
+
 .contacts__link-tel::before,
 .contacts__link-mail::before {
   content: "";
   position: absolute;
   left: -2px;
-  top: 0px;
+  top: 0;
   background-repeat: no-repeat;
 }
 
 .contacts__link-tel::before {
   width: 28px;
   height: 28px;
-  background-image: url(../img/phone-icon-footer.svg);
+  background-image: url("../img/phone-icon-footer.svg");
 }
 
-.contacts__link-mail::before  {
+.contacts__link-mail::before {
   width: 26px;
   height: 20px;
-  background-image: url(../img/mail-icon-footer.svg);
+  background-image: url("../img/mail-icon-footer.svg");
+}
+
+@media (max-width: $max-tablet-width) {
+  .footer {
+    margin-top: 80px;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+
+  .footer__destinations {
+    margin-bottom: 60px;
+  }
+
+  .footer__destinations::after {
+    height: 190px;
+    top: 0;
+  }
+
+  .footer__contacts::after {
+    width: 0;
+    height: 0;
+  }
+
+  .footer__description {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .footer__description::before {
+    content: "";
+    position: absolute;
+    width: 750px;
+    border-bottom: 1px solid $light-grey;
+    top: -25px;
+  }
+
+  .description__title,
+  .description__text {
+    text-align: center;
+  }
 }

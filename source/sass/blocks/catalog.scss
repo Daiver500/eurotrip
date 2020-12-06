@@ -174,3 +174,17 @@
   overflow: visible;
   background: rgba(20, 21, 23, 0.6);
 }
+
+@media (max-width: $max-tablet-width) {
+  .catalog {
+    background-image: none;
+  }
+
+  .catalog__image {
+    padding-bottom: 80px;
+  }
+
+  .catalog__image-panorama {
+    min-height: 344px;
+  }
+}
