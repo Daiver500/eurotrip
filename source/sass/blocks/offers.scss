@@ -44,6 +44,7 @@
   justify-content: space-between;
   position: relative;
   margin-bottom: 70px;
+  display: none;
 }
 
 .offers__description {
@@ -110,7 +111,7 @@
 .reviews__title::after {
   max-width: 80px;
   border-bottom: 1px solid #FE7865;
-  }
+}
 
 .reviews__text {
   margin-top: 0;
@@ -139,18 +140,15 @@
   z-index: 0;
 }
 
-.offers__wrapper {
-  display: none;
-}
-
 .offers__wrapper--active {
   display: block;
 }
 
 @media (max-width: $max-tablet-width) {
   .offers__wrapper {
-    padding-bottom: 350px;
+    padding-bottom: 200px;
   }
+
   .offers__list {
     margin-bottom: 50px;
     padding-right: 40px;
@@ -175,7 +173,7 @@
   .offers__title {
     margin-bottom: 15px;
     font-size: 30px;
-     line-height: 45px;
+    line-height: 45px;
   }
 
   .offers__text {
@@ -198,7 +196,7 @@
   }
 
   .offers__reviews {
-    top: 425px;
+    top: 375px;
     left: 50%;
     transform: translateX(-50%);
   }

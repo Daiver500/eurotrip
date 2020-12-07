@@ -16,7 +16,7 @@
   top: 70px;
   left: 365px;
   padding: 50px;
-  max-width: 655px;
+  max-width: 660px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,10 +75,12 @@
 @media (max-width: $max-tablet-width) {
   .contacts {
     background-size: 100%;
+    width: 100%;
+    background-image: url("../img/ocean-tablet.jpg");
   }
 
   .contacts__inner {
-    top: 60px;
-    left: 180px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

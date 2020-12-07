@@ -11,6 +11,8 @@
 .catalog__offers {
   padding-left: 10px;
   padding-right: 10px;
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 .catalog__image {
@@ -134,7 +136,6 @@
   // align-items: center;
   // align-content: center;
   padding: 0;
-  margin: 0;
 }
 
 
@@ -205,6 +206,7 @@
 
   .catalog__image-panorama {
     min-height: 344px;
+    max-width: 1024px;
   }
 
   .catalog__image-card {
@@ -219,6 +221,7 @@
     padding-bottom: 15px;
     font-size: 30px;
     line-height: 45px;
+    text-align: center;
   }
 
   .catalog__image-text {
@@ -259,14 +262,13 @@
 
   .catalog__title-text {
     text-align: center;
-   }
+  }
 
-   .catalog__list {
+  .catalog__list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
     margin-bottom: 100px;
   }
 
@@ -277,12 +279,17 @@
   .catalog__nameplate {
     bottom: 5px;
   }
+
+  .catalog__offers {
+    padding: 0;
+  }
 }
 
-@media (min-width: $mobile-width) and (max-width: $max-mobile-width){
+@media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
   .catalog__image-panorama {
     min-height: 235px;
-    }
+    max-width: 768px;
+  }
 
   .catalog__image-text,
   .catalog__image-button {

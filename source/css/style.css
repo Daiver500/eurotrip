@@ -47,7 +47,8 @@ a {
 *,
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px solid red; }
 
 img {
   max-width: 100%;
@@ -551,7 +552,9 @@ html {
 
 .catalog__offers {
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  margin: 0 auto;
+  max-width: 1024px; }
 
 .catalog__image {
   position: relative;
@@ -656,8 +659,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0;
-  margin: 0; }
+  padding: 0; }
 
 .catalog__item {
   position: relative;
@@ -712,7 +714,8 @@ html {
   .catalog__image {
     margin-bottom: 80px; }
   .catalog__image-panorama {
-    min-height: 344px; }
+    min-height: 344px;
+    max-width: 1024px; }
   .catalog__image-card {
     max-width: 398px;
     top: 60px;
@@ -722,7 +725,8 @@ html {
   .catalog__image-title {
     padding-bottom: 15px;
     font-size: 30px;
-    line-height: 45px; }
+    line-height: 45px;
+    text-align: center; }
   .catalog__image-text {
     margin-bottom: 15px;
     text-align: center;
@@ -754,16 +758,18 @@ html {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
     margin-bottom: 100px; }
   .catalog__item {
     margin-bottom: 15px; }
   .catalog__nameplate {
-    bottom: 5px; } }
+    bottom: 5px; }
+  .catalog__offers {
+    padding: 0; } }
 
 @media (min-width: 319px) and (max-width: 767px) {
   .catalog__image-panorama {
-    min-height: 235px; }
+    min-height: 235px;
+    max-width: 768px; }
   .catalog__image-text,
   .catalog__image-button {
     display: none; } }
@@ -807,7 +813,8 @@ html {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  display: none; }
 
 .offers__description {
   min-width: 370px;
@@ -888,15 +895,12 @@ html {
   top: -55px;
   z-index: 0; }
 
-.offers__wrapper {
-  display: none; }
-
 .offers__wrapper--active {
   display: block; }
 
 @media (max-width: 1023px) {
   .offers__wrapper {
-    padding-bottom: 350px; }
+    padding-bottom: 200px; }
   .offers__list {
     margin-bottom: 50px;
     padding-right: 40px;
@@ -928,7 +932,7 @@ html {
     z-index: -1;
     width: 100%; }
   .offers__reviews {
-    top: 425px;
+    top: 375px;
     left: 50%;
     transform: translateX(-50%); } }
 
@@ -1138,7 +1142,7 @@ html {
   top: 70px;
   left: 365px;
   padding: 50px;
-  max-width: 655px;
+  max-width: 660px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1187,10 +1191,12 @@ html {
 
 @media (max-width: 1023px) {
   .contacts {
-    background-size: 100%; }
+    background-size: 100%;
+    width: 100%;
+    background-image: url("../img/ocean-tablet.jpg"); }
   .contacts__inner {
-    top: 60px;
-    left: 180px; } }
+    left: 50%;
+    transform: translateX(-50%); } }
 
 .footer {
   margin-top: 170px; }
