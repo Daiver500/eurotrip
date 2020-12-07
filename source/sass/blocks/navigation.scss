@@ -82,6 +82,7 @@
   font-size: 14px;
   line-height: 17px;
   color: $dark;
+  font-weight: 500;
 }
 
 .navigation__link-tel {
@@ -102,6 +103,7 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+    width: 100%;
   }
 
   .navigation__destinations {
@@ -120,13 +122,15 @@
     font-weight: 600;
     padding-left: 16px;
     position: relative;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
 
   .navigation__item::after {
     content: "";
     position: absolute;
     right: 20px;
-    top: 0;
+    top: 20px;;
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
@@ -135,6 +139,13 @@
 
   .navigation__item {
     margin-bottom: 30px;
+  }
+
+  .navigation__link {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: $dark;
   }
 
   .navigation__link-tel {
@@ -155,4 +166,9 @@
   .navigation__hidden {
     display: none;
   }
+}
+
+@media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
+
+
 }

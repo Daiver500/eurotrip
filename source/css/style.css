@@ -58,15 +58,20 @@ img {
 
 .container {
   width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 10px 10px; }
 
 @media (max-width: 1023px) {
   .container {
-    width: 1024px; } }
+    width: 767px; } }
 
 @media (max-width: 767px) {
   .container {
-    width: 768px; } }
+    width: 320px; } }
+
+@media (max-width: 319px) {
+  .container {
+    width: 320px; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -473,7 +478,8 @@ html {
 .navigation__link {
   font-size: 14px;
   line-height: 17px;
-  color: #2C2E3F; }
+  color: #2C2E3F;
+  font-weight: 500; }
 
 .navigation__link-tel {
   font-size: 18px;
@@ -490,7 +496,8 @@ html {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    width: 100%; }
   .navigation__destinations {
     position: relative;
     flex-direction: column;
@@ -504,18 +511,25 @@ html {
     line-height: 28px;
     font-weight: 600;
     padding-left: 16px;
-    position: relative; }
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 17px; }
   .navigation__item::after {
     content: "";
     position: absolute;
     right: 20px;
-    top: 0;
+    top: 20px;
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
     background-image: url("../img/arrow-menu.svg"); }
   .navigation__item {
     margin-bottom: 30px; }
+  .navigation__link {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #2C2E3F; }
   .navigation__link-tel {
     display: none; }
   .navigation__buttons {
@@ -534,6 +548,10 @@ html {
   background-position: 50% 2550px;
   background-repeat: no-repeat;
   margin-bottom: 140px; }
+
+.catalog__offers {
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .catalog__image {
   position: relative;
@@ -560,7 +578,10 @@ html {
   position: absolute;
   top: 185px;
   left: 80%;
-  transform: translateX(-80%); }
+  transform: translateX(-80%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
 
 .catalog__image-title,
 .catalog__image-text {
@@ -697,8 +718,6 @@ html {
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
     align-items: center; }
   .catalog__image-title {
     padding-bottom: 15px;
@@ -736,12 +755,18 @@ html {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    padding: 0 180px;
     margin-bottom: 100px; }
   .catalog__item {
     margin-bottom: 15px; }
   .catalog__nameplate {
     bottom: 5px; } }
+
+@media (min-width: 319px) and (max-width: 767px) {
+  .catalog__image-panorama {
+    min-height: 235px; }
+  .catalog__image-text,
+  .catalog__image-button {
+    display: none; } }
 
 .catalog__offers {
   position: relative; }
@@ -903,13 +928,15 @@ html {
     z-index: -1;
     width: 100%; }
   .offers__reviews {
-    top: 515px;
+    top: 425px;
     left: 50%;
     transform: translateX(-50%); } }
 
 .prices__wrapper {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .prices__description {
   border: 1px solid rgba(44, 46, 63, 0.3);
@@ -941,8 +968,7 @@ html {
 
 .prices__summ {
   font-size: 25px;
-  font-weight: 700;
-  padding-left: 10px; }
+  font-weight: 700; }
 
 .prices__text {
   color: #2C2E3F;
@@ -1064,7 +1090,6 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: 1fr 1fr; */
-    padding: 0 150px;
     grid-row-gap: 30px;
     grid-column-gap: 10px; }
   .prices__details {
@@ -1072,11 +1097,29 @@ html {
     padding-top: 0;
     grid-row-start: 1;
     grid-column-start: 1;
-    grid-column-end: 3; }
+    grid-column-end: 3;
+    text-align: center;
+    margin-bottom: 20px; }
   .prices__description {
     grid-row-start: 2;
     grid-column-start: 1;
-    grid-column-end: 2; } }
+    grid-column-end: 2; }
+  .details__title {
+    font-size: 30px;
+    line-height: 45px; }
+  .details__text {
+    font-size: 16px;
+    line-height: 27px; }
+  .details__contacts-title {
+    font-size: 18px;
+    line-height: 34px; }
+  .details__contacts-link {
+    font-size: 18px;
+    line-height: 34px;
+    text-decoration: underline;
+    color: #F17D4B; }
+  .details__contacts-link::before {
+    display: none; } }
 
 .contacts {
   background-image: url("../img/ocean.jpg");

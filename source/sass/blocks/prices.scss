@@ -1,6 +1,8 @@
 .prices__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .prices__description {
@@ -40,7 +42,6 @@
 .prices__summ {
   font-size: 25px;
   font-weight: 700;
-  padding-left: 10px;
 }
 
 .prices__text {
@@ -183,7 +184,6 @@
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: 1fr 1fr; */
-    padding: 0 150px;
     grid-row-gap: 30px;
     grid-column-gap: 10px;
   }
@@ -194,11 +194,40 @@
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 3;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .prices__description {
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+
+  .details__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .details__text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .details__contacts-title {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .details__contacts-link {
+    font-size: 18px;
+    line-height: 34px;
+    text-decoration: underline;
+    color: $dark-orange;
+  }
+
+
+  .details__contacts-link::before {
+    display: none;
   }
 }
