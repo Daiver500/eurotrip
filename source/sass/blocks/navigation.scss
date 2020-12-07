@@ -28,6 +28,7 @@
 .navigation__close {
   width: 22px;
   height: 22px;
+  display: none;
 }
 
 .navigation__inner {
@@ -100,6 +101,7 @@
     display: block;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
   }
 
   .navigation__destinations {
@@ -123,7 +125,7 @@
   .navigation__item::after {
     content: "";
     position: absolute;
-    right: 50px;
+    right: 20px;
     top: 0;
     background-repeat: no-repeat;
     width: 25px;
@@ -131,7 +133,7 @@
     background-image: url("../img/arrow-menu.svg");
   }
 
-  .navigation__item:not(:last-child) {
+  .navigation__item {
     margin-bottom: 30px;
   }
 
@@ -144,6 +146,10 @@
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .navigation__close {
+    display: block;
   }
 
   .navigation__hidden {

@@ -29,7 +29,7 @@
                   fill="currentColor"/>
               </svg>
             </button>
-            <button class="navigation__toggle navigation__toggle-close hidden" type="button">
+            <button class="navigation__toggle navigation__toggle-close" type="button">
               <svg class="navigation__close" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="currentColor" />
                 <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="currentColor" />
@@ -37,6 +37,7 @@
             </button>
             </div>
             </div>
+            <div>
                     <ul class="navigation__destinations">
                         <li class="navigation__item"><a class="navigation__link" href="blank.html">О путешествии</a></li>
                         <li class="navigation__item"><a class="navigation__link" href="blank.html">Цены</a></li>
@@ -80,7 +81,7 @@
                         <source type="image/webp" srcset="img/grecia-desktop.webp" />
                         <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
                         <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
-                        <img src="img/grecia-desktop.jpg" alt="Фото карточки каталога" />
+                        <img src="img/greece-desktop.jpg" alt="Фото карточки каталога" />
                       </picture>
                     <button id="button-greece" class="catalog__button catalog__button-greece" type="button">Смотреть подробнее</button>
                     <div class="catalog__nameplate">
@@ -128,7 +129,7 @@
                   <source type="image/webp" srcset="img/grecia-desktop.webp" />
                   <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
                   <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
-                  <img src="img/chernogoria-desktop.jpg" alt="Фото карточки каталога" />
+                  <img src="img/montenegro-desktop.jpg" alt="Фото карточки каталога" />
               </picture>
               <button id="button-montenegro" class="catalog__button catalog__button-montenegro" type="button">Смотреть подробнее</button>
               <div class="catalog__nameplate">
@@ -144,7 +145,7 @@
                 <source type="image/webp" srcset="img/grecia-desktop.webp" />
                 <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
                 <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
-                <img src="img/horvatia-desktop.jpg" alt="Фото карточки каталога" />
+                <img src="img/croatia-desktop.jpg" alt="Фото карточки каталога" />
             </picture>
             <button id="button-croatia" class="catalog__button catalog__button-croatia" type="button">Смотреть подробнее</button>
             <div class="catalog__nameplate">
@@ -172,9 +173,9 @@
                 <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
                 <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
                 <source type="image/webp" srcset="img/grecia-desktop.webp" />
-                <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
-                <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
-                <img class="reviews__image" src="img/background-reviews-greece.jpg" alt="Видовая картинка" />
+                <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />-->
+                <source media="(max-width:1023px)" srcset="img/greece-background-tablet.jpg" />
+                <img class="reviews__image" src="img/greece-background.jpg" alt="Видовая картинка" />
                 </picture>
             </div>
             <div class="offers__reviews">
@@ -192,16 +193,6 @@
               <p class="offers__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.  </p>
               <button class="offers__button-order button" type="button">Купить тур сейчас</button>
             </div>
-            <div>
-              <picture>
-                <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
-                <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
-                <source type="image/webp" srcset="img/grecia-desktop.webp" />
-                <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
-                <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
-                <img class="reviews__image" src="img/background-reviews-albania.jpg" alt="Видовая картинка" />
-              </picture>
-            </div>
             <div class="offers__reviews">
               <p class="reviews__title">Отзывы</p>
               <p class="reviews__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :) </p>
@@ -216,16 +207,6 @@
                 <p class="offers__title">Македония</p>
                 <p class="offers__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров. </p>
                 <button class="offers__button-order button" type="button">Купить тур сейчас</button>
-              </div>
-              <div>
-                <picture>
-                  <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
-                  <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
-                  <source type="image/webp" srcset="img/grecia-desktop.webp" />
-                  <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
-                  <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
-                  <img class="reviews__image" src="img/background-reviews-makedonia.jpg" alt="Видовая картинка" />
-                </picture>
               </div>
             <div class="offers__reviews">
               <p class="reviews__title">Отзывы</p>
@@ -242,16 +223,6 @@
               <p class="offers__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.   </p>
               <button class="offers__button-order button" type="button">Купить тур сейчас</button>
             </div>
-            <div>
-              <picture>
-                <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
-                <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
-                <source type="image/webp" srcset="img/grecia-desktop.webp" />
-                <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
-                <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
-                <img class="reviews__image" src="img/background-reviews-montenegro.jpg" alt="Видовая картинка" />
-              </picture>
-            </div>
             <div class="offers__reviews">
               <p class="reviews__title">Отзывы</p>
               <p class="reviews__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую </p>
@@ -267,16 +238,6 @@
               <p class="offers__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет. </p>
               <button class="offers__button-order button" type="button">Купить тур сейчас</button>
             </div>
-            <div>
-              <picture>
-                <!--<source type="image/webp" media="(min-width:767px)" srcset="img/grecia-mobile.webp" />
-                <source type="image/webp" media="(min-width:1023px)" srcset="img/grecia-tablet.webp" />
-                <source type="image/webp" srcset="img/grecia-desktop.webp" />
-                <source media="(min-width:767px)" srcset="img/grecia-mobile.jpg" />
-                <source media="(min-width:1023px)" srcset="img/grecia-tablet.jpg" />-->
-                <img class="reviews__image" src="img/background-reviews-croatia.jpg" alt="Видовая картинка" />
-              </picture>
-            </div>
             <div class="offers__reviews">
               <p class="reviews__title">Отзывы</p>
               <p class="reviews__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :) </p>
@@ -288,6 +249,7 @@
           </div>
         </div>
         <div class="prices__wrapper">
+          <div class="prices__description-wrapper">
           <div class="prices__description prices__description--active">
             <p class="prices__title prices__title--active">Комплексный <span class="prices__summ">$1999</span></p>
             <p class="prices__text prices__text--active">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
@@ -310,6 +272,7 @@
               <li class="prices__item">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
             <button class="prices__button button" type="button">Купить тур сейчас</button>
+          </div>
           </div>
           <div class="prices__details">
             <p class="details__title">Цены</p>

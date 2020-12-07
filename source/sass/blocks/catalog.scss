@@ -10,7 +10,7 @@
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
-  padding-bottom: 200px;
+  margin-bottom: 200px;
 }
 
 .catalog__image-panorama {
@@ -44,11 +44,16 @@
 
 .catalog__image-title {
   padding-bottom: 30px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 80px;
 }
 
 .catalog__image-text {
   margin: 0;
-  padding-bottom: 39px;
+  margin-bottom: 39px;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 .catalog__image-button {
@@ -85,17 +90,20 @@
 .catalog__title {
   max-width: 358px;
   position: relative;
-  padding-bottom: 65px;
+  margin-bottom: 65px;
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
 }
 
 .catalog__title::after {
   content: "";
   position: absolute;
-  bottom: 20px;
+  bottom: -30px;
   left: 10px;
   right: 10px;
   max-width: 229px;
-  border: 3px solid $orange-for-links;
+  border-bottom: 4px solid $orange-for-links;
 }
 
 .catalog__title-text {
@@ -181,10 +189,84 @@
   }
 
   .catalog__image {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 
   .catalog__image-panorama {
     min-height: 344px;
+  }
+
+  .catalog__image-card {
+    max-width: 398px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalog__image-title {
+    padding-bottom: 15px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .catalog__image-text {
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+
+  .catalog__image-button {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 40px;
+    padding-right: 75px;
+  }
+
+  .catalog__image-buttontext::after {
+    left: 130px;
+    top: 0;
+  }
+
+  .catalog__header {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalog__title {
+    max-width: 343px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .catalog__title::after {
+    display: none;
+  }
+
+  .catalog__title-text {
+    text-align: center;
+   }
+
+   .catalog__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    padding: 0 180px;
+    margin-bottom: 100px;
+  }
+
+  .catalog__item {
+    margin-bottom: 15px;
+  }
+
+  .catalog__nameplate {
+    bottom: 5px;
   }
 }

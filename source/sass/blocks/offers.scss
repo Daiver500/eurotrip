@@ -18,7 +18,7 @@
   bottom: -15px;
   left: 0;
   right: 0;
-  border: 1px solid $semi-dark;
+  border-bottom: 1px solid $semi-dark;
 }
 
 .offers__button {
@@ -43,11 +43,12 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 240px;
+  margin-bottom: 70px;
 }
 
 .offers__description {
   min-width: 370px;
+  margin-bottom: 170px;
 }
 
 .offers__title {
@@ -70,7 +71,7 @@
 
 .offers__title::after {
   max-width: 160px;
-  border: 3px solid $orange-for-links;
+  border-bottom: 4px solid $orange-for-links;
 }
 
 .offers__text {
@@ -108,7 +109,7 @@
 
 .reviews__title::after {
   max-width: 80px;
-  border: 1px solid #FE7865;
+  border-bottom: 1px solid #FE7865;
   }
 
 .reviews__text {
@@ -145,4 +146,62 @@
 .offers__wrapper--active {
   display: block;
 }
+
+@media (max-width: $max-tablet-width) {
+  .offers__wrapper {
+    padding-bottom: 350px;
+  }
+  .offers__list {
+    margin-bottom: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .offers__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 350px;
+  }
+
+  .offers__item:last-child {
+    display: none;
+  }
+
+  .offers__title::after {
+    display: none;
+  }
+
+  .offers__title {
+    margin-bottom: 15px;
+    font-size: 30px;
+     line-height: 45px;
+  }
+
+  .offers__text {
+    min-width: 726px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+
+  .offers__button-order {
+    padding: 19px 50px;
+  }
+
+  .reviews__image {
+    position: absolute;
+    right: 0;
+    top: 330px;
+    z-index: -1;
+    width: 100%;
+  }
+
+  .offers__reviews {
+    top: 515px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 
