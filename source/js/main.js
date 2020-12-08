@@ -9,8 +9,13 @@ const makedonia = document.querySelector(".offers__wrapper-makedonia")
 const montenegro = document.querySelector(".offers__wrapper-montenegro")
 const croatia = document.querySelector(".offers__wrapper-croatia")
 const catalogList = document.querySelector(".catalog__list")
+const catalogImageButtonMobile = document.querySelector(".catalog__image-buttonmobile")
 
 catalogImageButton.addEventListener("click", function(){
+  catalogHeader.scrollIntoView({behavior: "smooth"});
+})
+
+catalogImageButtonMobile.addEventListener("click", function(){
   catalogHeader.scrollIntoView({behavior: "smooth"});
 })
 

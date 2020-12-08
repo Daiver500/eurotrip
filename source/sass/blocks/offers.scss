@@ -110,7 +110,7 @@
 
 .reviews__title::after {
   max-width: 80px;
-  border-bottom: 1px solid #FE7865;
+  border-bottom: 1px solid $orange-for-links;
 }
 
 .reviews__text {
@@ -220,7 +220,7 @@
   }
 
   .offers__reviews {
-    top: 570px;
+    top: 100px;
     width: 270px;
     text-align: center;
     padding: 15px;
@@ -233,6 +233,7 @@
 
   .offers__description {
     margin-bottom: 0;
+    min-width: 320px;
   }
 
   .reviews__author {
@@ -291,6 +292,10 @@
 
   .author__avatar {
     margin-bottom: 10px;
+  }
+
+  .offers__picture {
+    position: relative;
   }
 }
 

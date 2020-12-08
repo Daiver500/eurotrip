@@ -88,6 +88,40 @@
 @media (max-width: $max-mobile-width) {
   .contacts {
     background-image: none;
-    width: 320px;
+    min-width: 320px;
+    padding: 0;
+    background-color: $grey;
+  }
+
+  .contacts__inner {
+    top: 20px;
+    min-width: 320px;
+    background-color: $grey;
+    box-shadow: none;
+    padding: 20px;
+  }
+
+  .contacts__header,
+  .contacts__header-text,
+  .contacts__phone,
+  .contacts__email {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contacts__phone,
+  .contacts__email {
+    margin-right: 0;
+    min-width: 290px;
+  }
+
+  .contacts__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__button {
+    margin-left: 0;
   }
 }
