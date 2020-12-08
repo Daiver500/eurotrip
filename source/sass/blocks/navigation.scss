@@ -131,7 +131,7 @@
     content: "";
     position: absolute;
     right: 20px;
-    top: 20px;;
+    top: 20px;
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
@@ -163,9 +163,4 @@
   .navigation__hidden {
     display: none;
   }
-}
-
-@media (min-width: $mobile-width) and (max-width: $max-mobile-width) {
-
-
 }
