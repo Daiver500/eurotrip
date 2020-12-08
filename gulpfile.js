@@ -9,11 +9,11 @@ const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
-const svgstore = require("gulp-svgstore");
 const del = require("del");
 const uglify = require("gulp-uglify");
 const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
+const concat = require("gulp-concat");
 
 // Styles
 
@@ -34,17 +34,6 @@ const styles = () => {
 }
 
 exports.styles = styles;
-
-const jsmodal = () => {
-  return gulp.src("source/js/modal.js")
-    .pipe(uglify())
-    .pipe(rename("modal.min.js"))
-    .pipe(gulp.dest("source/js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(sync.stream());
-}
-
-exports.jsmodal = jsmodal;
 
 //Images
 
@@ -88,7 +77,6 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/*.ico",
     "source/*.html"
   ], {
     base: "source"
@@ -112,7 +100,6 @@ const build = () => gulp.series (
   clean,
   copy,
   styles,
-  jsmodal,
   images,
   htmlinclude,
   imageswebp,

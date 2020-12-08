@@ -160,7 +160,7 @@
   border: none;
 }
 
-.nameplate__text {
+.catalog__text {
   font-size: 24px;
   line-height: 29px;
   margin: 0;
@@ -242,9 +242,9 @@
     padding-right: 75px;
   }
 
-  .catalog__image-buttontext::after {
-    left: 130px;
-    top: 0;
+  .catalog__image-button::after {
+    left: 180px;
+    top: 18px;
   }
 
   .catalog__header {

@@ -1,13 +1,14 @@
 {
-  "name": "pink-20",
+  "name": "eurotrip",
   "private": true,
-  "destinations": "Личный проект «Пинк» от HTML Academy",
+  "destinations": "Личный проект",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
     "browser-sync": "2.26.10",
     "del": "^5.1.0",
     "gulp": "4.0.2",
+    "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.1",
@@ -23,7 +24,8 @@
     "posthtml-include": "^1.4.3",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
-  },
+   },
+
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",

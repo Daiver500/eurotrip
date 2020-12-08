@@ -35,16 +35,16 @@
   position: relative;
 }
 
-.destinations__list {
+.footer__list {
   list-style: none;
   padding: 0;
 }
 
-.destinations__list:not(:last-child) {
+.footer__list:not(:last-child) {
   padding-right: 30px;
 }
 
-.destinations__title,
+.footer__title,
 .contacts__title,
 .description__title {
   font-size: 18px;
@@ -53,13 +53,13 @@
   margin-top: 0;
 }
 
-.destinations__link,
+.footer__link,
 .description__text {
   color: $semi-dark;
 }
 
-.destinations__list,
-.description__text {
+.footer__list,
+.footer__text {
   margin: 0;
 }
 
@@ -163,17 +163,17 @@
     margin-bottom: 50px;
   }
 
-  .destinations__title,
+  .footer__title,
   .contacts__title,
   .description__title {
     text-align: center;
   }
 
-  .destinations__list:not(:last-child) {
+  .footer__list:not(:last-child) {
     padding-right: 20px;
   }
 
-  .destinations__list:last-child {
+  .footer__list:last-child {
     grid-column-start: 1;
     grid-column-end: 3;
   }
