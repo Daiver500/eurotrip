@@ -1,5 +1,5 @@
 const catalogImageButton = document.querySelector(".catalog__image-button");
-const catalogTitle = document.querySelector(".catalog__title");
+const catalogHeader = document.querySelector(".catalog__header");
 const catalogButton = document.querySelectorAll(".catalog__button")
 const catalogOffers = document.querySelector(".catalog__offers")
 const offersList = document.querySelector(".offers__list")
@@ -11,7 +11,7 @@ const croatia = document.querySelector(".offers__wrapper-croatia")
 const catalogList = document.querySelector(".catalog__list")
 
 catalogImageButton.addEventListener("click", function(){
-  catalogTitle.scrollIntoView({behavior: "smooth"});
+  catalogHeader.scrollIntoView({behavior: "smooth"});
 })
 
 const scrollDown = () => {

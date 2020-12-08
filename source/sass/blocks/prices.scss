@@ -226,8 +226,49 @@
     color: $dark-orange;
   }
 
-
   .details__contacts-link::before {
     display: none;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .prices__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .prices__details {
+    min-width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .prices__description-wrapper {
+    flex-direction: column;
+  }
+
+  .prices__description {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .detals__title,
+  .details_-text {
+    margin-bottom: 20px;
+  }
+
+  .detals__title {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .details__text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .details__contacts-link,
+  .details__contacts-title {
+    padding-left: 0;
   }
 }

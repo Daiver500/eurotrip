@@ -13,3 +13,10 @@
   line-height: 15px;
   font-weight: 700;
 }
+
+@media (max-width: $max-mobile-width) {
+  .button {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

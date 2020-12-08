@@ -124,6 +124,7 @@
     position: relative;
     padding-top: 17px;
     padding-bottom: 17px;
+    margin-bottom: 30px;
   }
 
   .navigation__item::after {
@@ -135,10 +136,6 @@
     width: 25px;
     height: 25px;
     background-image: url("../img/arrow-menu.svg");
-  }
-
-  .navigation__item {
-    margin-bottom: 30px;
   }
 
   .navigation__link {

@@ -84,3 +84,10 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: $max-mobile-width) {
+  .contacts {
+    background-image: none;
+    width: 320px;
+  }
+}
