@@ -113,7 +113,7 @@ exports.build = build();
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "source"
+      baseDir: "public"
     },
     cors: true,
     notify: false,
