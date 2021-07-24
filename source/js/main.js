@@ -28,7 +28,7 @@ const scrollDown = () => {
 }
 scrollDown()
 
-const setActiveFilterBtn = (evt) => {
+/*const setActiveFilterBtn = (evt) => {
   const currentActive = document.querySelector(".offers__button--active");
   const {target} = evt;
   if (!target.classList.contains(`offers__button--active`)) {
@@ -183,4 +183,56 @@ const buttonClickHandler = ((evt) => {
     default:
   }
 });
-catalogList.addEventListener(`click`, buttonClickHandler);
+catalogList.addEventListener(`click`, buttonClickHandler);*/
+
+const catalogButtons = document.querySelectorAll(".catalog__button");
+const offerButtons = document.querySelectorAll(".offers__button");
+const offerWrappers = document.querySelectorAll(".offers__wrapper");
+const offerButtonsParent = document.querySelector(".offers__list");
+const catalogButtonsParent = document.querySelector(".catalog__list");
+
+const hideContent = () => {
+  offerWrappers.forEach((item) => {
+    item.classList.add("hidden");
+    item.classList.remove("offers__wrapper--active");
+  });
+
+  offerButtons.forEach((item) => {
+    item.classList.remove("offers__button--active");
+  })
+};
+
+const showContent = (i = 0) => {
+  offerWrappers[i].classList.remove("hidden");
+  offerWrappers[i].classList.add("offers__wrapper--active");
+  offerButtons[i].classList.add("offers__button--active");
+};
+
+hideContent();
+showContent();
+
+offerButtonsParent.addEventListener("click", (evt) => {
+  const target = evt.target;
+  if (target && target.classList.contains("offers__button")) {
+    offerButtons.forEach((item, i) => {
+      if(target === item) {
+      hideContent();
+      showContent(i);
+      }
+    });
+  }
+});
+
+catalogButtonsParent.addEventListener("click", (evt) => {
+  const target = evt.target;
+if (target && target.classList.contains("catalog__button")) {
+  catalogButtons.forEach((item, i) => {
+    if (target === item) {
+      hideContent();
+      showContent(i);
+    }
+  });
+}
+});
+
+
